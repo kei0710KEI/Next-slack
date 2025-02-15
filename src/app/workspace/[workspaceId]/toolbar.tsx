@@ -57,35 +57,7 @@ export const Toolbar = () => {
         <Button variant="transparent" size="iconSm">
           <Info className="size-5 text-white" />
         </Button>
-        <CommandDialog open={open} onOpenChange={setOpen}>
-          <DialogTitle className="sr-only">Search Dialog</DialogTitle>{" "}
-          {/* スクリーンリーダー向け */}
-          <CommandInput placeholder="Type a command or search..." />
-          <CommandList>
-            <CommandEmpty>No results found.</CommandEmpty>
-            <CommandGroup heading="Channels">
-              {channels?.map((channel) => (
-                <CommandItem
-                  key={channel._id}
-                  onSelect={() => onChannelClick(channel._id)}
-                >
-                  {channel.name}
-                </CommandItem>
-              ))}
-            </CommandGroup>
-            <CommandSeparator />
-            <CommandGroup heading="Members">
-              {members?.map((member) => (
-                <CommandItem
-                  key={member._id}
-                  onSelect={() => onMemberClick(member._id)}
-                >
-                  {member.user.name}
-                </CommandItem>
-              ))}
-            </CommandGroup>
-          </CommandList>
-        </CommandDialog>
+        
       </div>
     </nav>
   );
