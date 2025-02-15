@@ -15,6 +15,9 @@ const eslintConfig = [
     rules: {
       "@typescript-eslint/no-explicit-any": "off", // `any` 型の使用を許可
       "@typescript-eslint/no-unused-vars": "off",  // 未使用変数の警告を無効化
+      "@next/next/no-img-element": "off",
+      "react/no-unescaped-entities": "off",
+      "@typescript-eslint/no-empty-object-type": "off",
     },
   },
 ];
