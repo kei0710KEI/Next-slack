@@ -4,19 +4,11 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useWorkspaceId } from "@/hooks/use-workspace-id";
 import { useGetWorkspace } from "@/features/workspaces/api/use-get-workspace";
-import {
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-} from "@/components/ui/command";
+
 import { useRouter } from "next/navigation";
 import { useGetChannels } from "@/features/channels/api/use-get-channels";
 import { useGetMembers } from "@/features/members/api/use-get-members";
-import { DialogTitle } from "@/components/ui/dialog";
+
 
 export const Toolbar = () => {
   const workspaceId = useWorkspaceId();

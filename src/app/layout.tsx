@@ -8,7 +8,6 @@ import { JotaiProvider } from "@/components/jotai-provider";
 import { ConvexClientProvider } from "@/components/convex-client-provider";
 
 import { NuqsAdapter } from "nuqs/adapters/next/app";
-import { type ReactNode } from "react";
 
 import "./globals.css";
 
