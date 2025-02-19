@@ -7,6 +7,7 @@ import { useWorkspaceId } from "@/hooks/use-workspace-id";
 import { useGetWorkspace } from "@/features/workspaces/api/use-get-workspace";
 import { useGetChannels } from "@/features/channels/api/use-get-channels";
 import { useGetMembers } from "@/features/members/api/use-get-members";
+import { Hint } from "@/components/hint";
 
 export const Toolbar = () => {
   const workspaceId = useWorkspaceId();
@@ -51,9 +52,11 @@ export const Toolbar = () => {
         </Button>
       </div>
       <div className="ml-auto flex-1 flex items-center justify-end">
+        <Hint label="Information" >
         <Button variant="transparent" size="iconSm">
           <Info className="size-5 text-white" />
         </Button>
+        </Hint>
       </div>
 
       {/* モーダル検索バー */}
