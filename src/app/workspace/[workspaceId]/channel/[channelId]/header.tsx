@@ -136,8 +136,8 @@ export const Header = ({ title }: HeaderProps) => {
                     onChange={handleChange}
                     required
                     autoFocus
-                    minLength={3}
-                    maxLength={80}
+                    minLength={1}
+                    maxLength={30}
                     placeholder="e.g. plan-budget"
                   />
                   <DialogFooter>
